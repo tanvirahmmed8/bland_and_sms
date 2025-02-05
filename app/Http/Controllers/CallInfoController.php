@@ -45,7 +45,7 @@ class CallInfoController extends Controller
                 // Check if the client is interested in proceeding or scheduling
                 'is_interested' => 'Is the client interested in this solution or scheduling a demo? (yes/no/maybe) (Client’s info only)'
             ],
-            "webhook" => $request->customData['webhook'] ?? "https://brandellaltd.com/call-api/callback-call",
+            "webhook" => $request->customData['webhook'] ?? "https://old.powerinai.com/call-api/callback-call",
             "summary_prompt" => $request->customData['summary_prompt'] ?? $request->summary_prompt,
         ];
 
