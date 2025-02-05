@@ -4,7 +4,8 @@ use App\Http\Controllers\CallInfoController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return "Bland Call BD SMS";
 });
 
 Route::post('/send-call', [CallInfoController::class, 'index']);
